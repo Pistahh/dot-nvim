@@ -1,7 +1,7 @@
 vim.cmd [[colorscheme slate]]
 vim.wo.number = true
 vim.wo.signcolumn = "yes"
-
+vim.g.mapleader = ","
 
 if vim.fn.executable("rg") > 0 then
   vim.o.grepprg = "rg --hidden --glob '!.git' --no-heading --smart-case --vimgrep --follow $*"
